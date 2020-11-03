@@ -12,5 +12,5 @@
 Реализация работы программы находится в следующих файлах: demo.cpp, annealing.cpp.
 Результат работы программы приведен на скриншотах.
 
-![lab03_unomodal_print](screenshots/1.jpg)
-![lab03_multimodal_print](screenshots/1.jpg)
+![lab03_unomodal_print](screenshots/1.png)
+![lab03_multimodal_print](screenshots/2.png)
