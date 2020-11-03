@@ -22,7 +22,7 @@ const std::vector<Measure> annealing(const double& minTemp,
     std::srand(std::time(NULL));
     double temp = maxTemp;
     double xPrev = (static_cast<double>(std::rand()) /
-        static_cast<double>(RAND_MAX/3)); // Previous point on the interval
+        static_cast<double>(RAND_MAX/7) - 5); // Previous point on the interval
     double valuePrev = func(xPrev);
     double x = 0;
     double value = 0;
@@ -31,7 +31,7 @@ const std::vector<Measure> annealing(const double& minTemp,
     std::vector<Measure> measures = {{1, temp, xPrev, valuePrev}};
 
     while (temp > minTemp) {
-        x = static_cast<double>(std::rand()) / static_cast<double>(RAND_MAX/3);
+        x = static_cast<double>(std::rand()) / static_cast<double>(RAND_MAX/7) - 5;
         value = func(x);
         delta = value - valuePrev;
         if (delta <= 0) {
